@@ -1,0 +1,4 @@
+baseURL = "https://bapa.one/"
+languageCode = "en-us"
+title = "Bapa"
+theme = "hugo-theme-stack"
