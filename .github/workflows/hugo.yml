@@ -33,7 +33,11 @@ jobs:
           hugo-version: latest
           extended: true
 
-      - run: hugo  --minify  --environment production
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
+      - name: Build with Hugo
+        run: hugo --minify --environment production
 
       - uses: actions/configure-pages@v5
 
